@@ -1,0 +1,141 @@
+/* Estilo general */
+html, body {
+    width: 100%;
+    margin: 0;
+    background: rgb(255, 239, 207);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Menú de opciones */
+.dos_opciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /*Espacio entre los enlaces*/
+    padding: 20px;/*Margen interior del contenedor*/
+    background-color: rgb(243, 194, 120);/*Color del fondo*/
+    border: 1px solid rgb(243, 194, 120);/*Color del borde*/
+}
+
+.dos_opciones a {
+    text-align: center;/*Texto al centro*/
+    font-size: 25px;/*Tamaño de la letra*/
+    color: white;/*Color blanco*/
+    text-decoration: none;/*Que el texto no tenga ninguna decoracion*/
+    font-family: 'Barlow', sans-serif;
+}
+
+.dos_opciones a:hover {
+    text-decoration: underline;
+}
+
+/* Imagen del producto */
+.imagen-producto {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin: 20px 0; /* Espacio vertical */
+}
+
+.imagen-producto img {
+    max-width: 100%;/*La anchura sera del 100% del contenedor de la imagen*/
+    height: auto;/*Altura*/
+    border-radius: 8px;/*El borde de la imagen sera de 8px*/
+    max-height: 800px;/*Maxima altura*/
+}
+
+/* Sección del precio */
+.licohor {
+    text-align: center; /*El texto esta alineado a centro*/
+    color: brown;/*Color de la clase licor a rojo*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*El tipo de letra*/
+    font-size: 14px; /*Tamaño de la letra*/
+}
+
+/* Ubicación */
+.Ubication {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+}
+
+/* Imagen de Google Maps */
+.visual-ubication img {
+    width: 100%; /* Hace que la imagen sea responsiva */
+    max-width: 200px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacios en línea */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Redes sociales */
+.header-social {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 10px 0;
+}
+
+.header-social li {
+    list-style: none;
+    margin: 0 10px; /* Espacio entre iconos */
+}
+
+.header-social li a {
+    font-size: 42px;
+    color: rgb(251, 144, 44);
+}
+
+/* Contacto */
+.numero_contacto ul {
+    text-align: center; /* Centra los textos */
+    padding: 0; /* Quita el padding por defecto */
+}
+
+.numero_contacto ul li {
+    display: block;
+    list-style: none;
+    font-size: 25px;
+    color: rgb(251, 144, 44);
+    font-family: Barlow, sans-serif;
+    padding: 10px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1000px) {
+    .dos_opciones {
+        flex-direction: column; /* Apila los enlaces en móviles */
+    }
+
+    .dos_opciones a {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+
+    .licohor {
+        font-size: 12px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    .numero_contacto ul li {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+
+    .header-social li a {
+        font-size: 36px; /* Ajusta el tamaño de los iconos */
+    }
+}
+
+@media (max-width: 750px) {
+    .dos_opciones a {
+        font-size: 18px; /* Tamaño aún más pequeño en pantallas muy pequeñas */
+    }
+
+    .licohor {
+        font-size: 10px; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .numero_contacto ul li {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+    }
+
+    .header-social li a {
+        font-size: 30px; /* Tamaño más pequeño de los iconos */
+    }
+}

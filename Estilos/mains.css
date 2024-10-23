@@ -1,0 +1,464 @@
+/*Tamaño del contenido de toda la pagina*/
+html {
+    font-size: 16px;
+}
+
+/* Ajuste para dispositivos pequeños */
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 12px;
+        /* Se ajusta para pantallas pequeñas */
+    }
+}
+
+/*Los elementos del heigth usaran el 100% de sus contenedores*/
+html,
+body {
+    height: auto;
+    width: 100%;
+    /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
+    /*Quiere decir que se le quitar el margen para la pagina y se meustre por completo los contenedores*/
+    margin: 0;
+    background: rgb(255, 221, 157);
+}
+
+/* Ajuste de los títulos para pantallas pequeñas */
+@media screen and (max-width: 500px) {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/*Esta clase dara el 100% de tamaño con borde de 1 pixel de 66 px de largo y absoluto*/
+/* Estilos generales del header */
+.s-header {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(243, 194, 120);
+    height: 80px;
+    background-color: rgb(243, 194, 120);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Logo del pájaro azul */
+.site-logo img {
+    width: 67px;
+    height: 67px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* Contenedor del menú */
+.header-nav-wrap {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+/* Lista del menú */
+.header-nav-wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+}
+
+/* Elementos del menú */
+.header-nav-wrap li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+/* Estilo de los enlaces del menú */
+.header-nav-wrap li a {
+    font-family: Barlow;
+    font-size: 21px;
+    display: block;
+    color: white;
+}
+
+
+/* -------- Media Query para pantallas de hasta 500px -------- */
+@media screen and (max-width: 1400px) {
+
+    /* Ajuste del header */
+    .s-header {
+        flex-direction: column;
+        height: auto;
+        /* Ajustar la altura automáticamente */
+        padding: 10px;
+        /* Añadir espacio alrededor */
+    }
+
+    /* Logo más pequeño */
+    .site-logo img {
+        width: 40px;
+        height: 40px;
+        /* Reducir aún más el tamaño del logo */
+    }
+
+    /* Menú vertical */
+    .header-nav-wrap {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Lista del menú */
+    .header-nav-wrap ul {
+        margin-top: 10px;
+    }
+
+    /* Elementos del menú en columna */
+    .header-nav-wrap li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Estilo de los enlaces del menú */
+    .header-nav-wrap li a {
+        font-size: 16px;
+        /* Reducir más el tamaño del texto */
+    }
+}
+
+
+
+/* Efecto hover en los enlaces */
+.header-nav-wrap a:hover,
+.header-nav-wrap a:focus,
+.header-nav-wrap a:active {
+    color: rgb(241, 151, 49);
+}
+
+/* --- Media query para pantallas pequeñas (max-width: 500px) --- */
+@media (max-width: 500px) {
+    .s-header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .site-logo img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .header-nav-wrap {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .header-nav-wrap ul {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .header-nav-wrap li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .header-nav-wrap li a {
+        font-size: 1rem;
+    }
+}
+
+/*Estilo al titulo principal de la casita salinera*/
+.Titulo-Casita {
+    position: absolute;
+    top: 0.1%;
+    right: 67%;
+    margin: 0 1rem;
+    font-family: barlow;
+    color: aliceblue;
+}
+
+.Titulo-Casita h1 {
+    display: inline-block;
+}
+
+/*Dar posicion a las opciones del menu y estilos*/
+.title-about-us h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+    color: rgb(88, 34, 34);
+}
+
+
+/* Secction =borde a toda la pagina del menu principal*/
+.Content-About {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(255, 218, 144);
+    background: white;
+}
+
+/*para eliminar los puntos de la lista desordenada*/
+.menudos ul {
+    font-family: barlow;
+}
+
+
+
+/*el menu tendra una posicion absoluta y con la cantidad de pixeles para la ubicacion*/
+.opciones li a {
+    position: absolute;
+    margin-left: 10px;
+    color: chocolate;
+    text-decoration: none;
+}
+
+/*color al hacercar el icono del mouse a la seccion de licohores*/
+.opciones a:hover,
+.opciones a:focus,
+.opciones a:active {
+    color: rgb(39, 218, 241);
+}
+
+.productosprincipal {
+    margin-left: 0px;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
+    gap: 15px;
+    /* Espacio entre los elementos */
+}
+
+.productosprincipal h2 {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+/*cambio de letra y el color de la letra*/
+.productosprincipal a {
+    font-family: barlow;
+    color: rgb(88, 34, 34);
+    font-size: 14px;
+    text-decoration: none;
+
+    /*centramos el texto al centro de cada producto*/
+}
+
+/*tamaño de la imagen*/
+.productosprincipal h2 img {
+    width: 105px;
+    height: 170px;
+    text-decoration: none;
+}
+
+
+
+/*Cambiamos el tipo de color cuando el usuario ingrese el cursor a la imagen*/
+.productosprincipal a:hover,
+.productosprincipal a:focus,
+.productosprincipal a:active {
+    color: rgb(211, 134, 40);
+    transition: 0.5s;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
+/*Desarrollo de estilos al apartado de como llegar a la casita salinera*/
+
+.Ubication {
+    position: absolute;
+    width: 100%;
+    border: 1px solid rgb(255, 226, 168);
+    background-color: rgb(255, 220, 149);
+    /*no tendra dezplasamiento en la derecha*/
+    right: auto;
+    /*No tendra dezplasamiento a la izquierda*/
+    bottom: auto;
+}
+
+.recuadro {
+    background: white;
+    border: 0.5px solid;
+    border-color: aliceblue;
+
+}
+
+.ubicacion-container {
+    background-image: url("../imagenes/licores-al-por-mayor_2.webp");
+    /* Ajusta el fondo */
+    background-size: cover;
+    /* Asegura que cubra todo el espacio */
+    background-position: center;
+    padding: 50px 0;
+    /* Espacio superior e inferior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Tamaño completo de la pantalla */
+}
+
+/* Contenido centrado con estilo */
+.ubicacion-content {
+    background-color: yellow;
+    padding: 30px;
+    width: 50%;
+    /* Ajusta el tamaño del bloque */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Enlace a Google Maps */
+.ubicacion-content a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #d35400;
+    /* Color del enlace */
+    font-weight: bold;
+}
+
+.ubicacion-content a:hover {
+    text-decoration: underline;
+}
+
+/* Ajusta el estilo de los párrafos */
+.ubicacion-content p {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* -------- Media Queries -------- */
+
+/* Pantallas de hasta 1400px */
+@media screen and (max-width: 1400px) {
+    body {
+        font-size: 16px;
+    }
+
+    .tiendauno {
+        font-size: 26px;
+    }
+
+    #cobertura_h2 {
+        font-size: 30px;
+    }
+
+    #casitasalinas img {
+        max-width: 280px;
+    }
+
+    .Ubication {
+        padding: 20px 0;
+    }
+
+    .header-social {
+        gap: 35px;
+    }
+}
+
+/* Pantallas de hasta 1200px */
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+
+    .tiendauno {
+        font-size: 24px;
+    }
+
+    #cobertura_h2 {
+        font-size: 28px;
+    }
+
+    #casitasalinas img {
+        max-width: 250px;
+    }
+
+    .Ubication {
+        padding: 15px 0;
+    }
+
+    .header-social {
+        gap: 30px;
+    }
+}
+
+/* Pantallas de hasta 768px */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .tiendauno {
+        font-size: 22px;
+    }
+
+    #cobertura_h2 {
+        font-size: 24px;
+    }
+
+    #casitasalinas img {
+        max-width: 220px;
+    }
+
+    .Ubication {
+        padding: 10px 0;
+    }
+
+    .header-social {
+        gap: 25px;
+    }
+
+    .header-social li a i {
+        font-size: 40px;
+    }
+}
+
+/* Pantallas de hasta 500px */
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 13px;
+    }
+
+    .tiendauno {
+        font-size: 20px;
+    }
+
+    #cobertura_h2 {
+        font-size: 20px;
+    }
+
+    #casitasalinas img {
+        max-width: 200px;
+    }
+
+    .Ubication {
+        padding: 5px 0;
+    }
+
+    .header-social {
+        gap: 20px;
+    }
+
+    .header-social li a i {
+        font-size: 35px;
+    }
+}

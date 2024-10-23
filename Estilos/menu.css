@@ -1,0 +1,267 @@
+/*Tamaño del contenido de toda la pagina*/
+html {
+    font-size: 16px;
+}
+
+/*voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferente*/
+@media screen and(max-width:400px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/*Los elementos del heigth usaran el 100% de sus contenedores*/
+html,
+body {
+    width: 100%;
+    /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
+    /*Quiere decir que se le quitar el margen para la pagina y se meustre por completo los contenedores*/
+    margin: 0;
+    background: rgb(255, 239, 207);
+}
+
+/*Si el dispostivo tiene un tamaño mayor a 600 px hacer*/
+@media screen and(max-width:600px) {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        /*Margen hacia arriba*/
+        margin-top: 4rem;
+    }
+}
+
+.dos-opciones {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(243, 194, 120);
+    height: 80px;
+    background-color: rgb(243, 194, 120);
+    /*De derecha a la izquierda*/
+    right: 0;
+    /*De izquierda a la derecha*/
+    left: 0;
+    /*De abajo para arriva*/
+    bottom: 0;
+}
+
+/*estilo al menu de la tienda para regresar a la pagina principal*/
+.dos-opciones a {
+    display: inline-block;
+    /* Muestra el enlace como un bloque en línea */
+    position: relative;
+    /* Posiciona el elemento en relación a su posición normal */
+    text-align: center;
+    /* Alinea el texto al centro dentro del enlace */
+    left: 1%;
+    /* Desplaza el enlace ligeramente hacia la derecha */
+    padding-top: 1%;
+    /* Espaciado interno en la parte superior */
+
+    display: inline-block;
+    /* Redundante, ya se definió arriba */
+    list-style: none;
+    /* Elimina viñetas (aunque no es necesario para enlaces) */
+
+    margin-left: 0;
+    /* Sin margen en la izquierda */
+    margin-top: 20px;
+    /* Margen superior de 20px */
+    padding-left: 0%;
+    /* Sin padding a la izquierda */
+
+    font-family: Barlow;
+    /* Establece la fuente */
+    font-size: 25px;
+    /* Tamaño de fuente grande */
+
+    display: block;
+    /* Cambia el elemento a bloque completo (contradice inline-block) */
+    margin: 0 1rem;
+    /* Margen lateral de 1rem */
+    color: white;
+    /* Color de texto blanco */
+
+    position: relative;
+    /* Ya se declaró anteriormente, redundante */
+
+    /* Posiciones para ajustes futuros */
+    right: 0;
+    /* Sin desplazamiento hacia la derecha */
+    left: 0;
+    /* Sin desplazamiento hacia la izquierda */
+    bottom: 0;
+    /* Sin desplazamiento hacia arriba */
+}
+
+.tiendauno {
+    position: relative;
+    width: 100%;
+    border: 1px solid rgb(243, 194, 120);
+    height: 80px;
+    background-color: rgb(243, 194, 120);
+    /*De derecha a la izquierda*/
+    right: 0;
+    /*De izquierda a la derecha*/
+    left: 0;
+    /*De abajo para arriva*/
+    bottom: 0;
+}
+
+.tiendauno a {
+    display: inline-block; /* El enlace se comporta como un bloque en línea */
+    position: relative; /* Permite ajustar su posición respecto a su lugar normal */
+    text-align: center; /* Centra el texto dentro del enlace */
+    left: 1%; /* Mueve ligeramente el enlace hacia la derecha */
+    padding-top: 1%; /* Añade espacio en la parte superior */
+    
+    display: inline-block; /* Redundante, ya está declarado antes */
+    list-style: none; /* Elimina cualquier viñeta (innecesario para enlaces) */
+    
+    margin-left: 0; /* Sin margen a la izquierda */
+    margin-top: 20px; /* Añade un margen superior de 20px */
+    padding-left: 0%; /* Sin relleno a la izquierda */
+
+    font-family: Barlow; /* Aplica la fuente Barlow */
+    font-size: 25px; /* Tamaño grande para el texto */
+    
+    display: block; /* Cambia a bloque (contradice inline-block) */
+    margin: 0 1rem; /* Margen lateral de 1rem */
+    color: white; /* Color blanco para el texto */
+
+    position: relative; /* Redundante, ya se declaró */
+    
+    /* Ajustes de posición, pero todos están a 0, por lo que no hay efecto práctico */
+    right: 0; /* Sin desplazamiento a la derecha */
+    left: 0; /* Sin desplazamiento a la izquierda */
+    bottom: 0; /* Sin desplazamiento hacia arriba */
+}
+
+/* Estilo al pasar el cursor, enfocar o hacer clic en los enlaces */
+.tiendauno a:hover,
+.tiendauno a:focus,
+.tiendauno a:active {
+    color: rgb(230, 162, 44); /* Cambia el color del texto */
+}
+
+/* Estilo de las imágenes en .licohores */
+.licohores h2 img {
+    width: 105px; /* Ancho de la imagen */
+    height: 170px; /* Altura de la imagen */
+}
+
+/* Estilo del texto en los productos de .licohores */
+.licohores a {
+    font-family: Barlow; /* Aplica la fuente Barlow */
+    color: rgb(0, 0, 0); /* Color negro */
+    font-size: 14px; /* Tamaño pequeño del texto */
+}
+
+/* Centra el texto debajo de los productos */
+.licohores h2 {
+    text-align: center; /* Texto centrado */
+}
+
+/* Cambia el color del texto al interactuar con él */
+.licohores a:hover,
+.licohores a:focus,
+.licohores a:active {
+    color: rgb(211, 134, 40); /* Color marrón anaranjado */
+}
+
+/* Estilo de los elementos del menú */
+.menu li a {
+    list-style: none; /* Sin viñetas */
+    display: inline-block; /* Elementos en línea */
+    font-family: Barlow; /* Aplica la fuente Barlow */
+}
+
+/* Configuración del layout para los productos en .licohores */
+.licohores {
+    display: grid; /* Usar un grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 2fr)); /* Columnas dinámicas */
+    gap: 15px; /* Espacio entre elementos */
+}
+
+/* Estilo de las imágenes dentro de .licohores */
+.licohores img {
+    width: 100%; /* Imagen ajusta su ancho al contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Margen superior para los encabezados dentro de .licohores */
+.licohores h2 {
+    text-align: center; /* Centra el texto */
+    margin-top: 8px; /* Añade un pequeño margen superior */
+}
+
+/* Redes Sociales */
+.header-social {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    padding: 10px 0; /* Espacio superior e inferior */
+}
+
+.header-social li {
+    list-style: none; /* Sin viñetas */
+    margin: 0 10px; /* Espacio lateral entre iconos */
+}
+
+/* Estilo de los enlaces de redes sociales */
+.header-social li a {
+    font-size: 42px; /* Tamaño grande para los iconos */
+    color: rgb(251, 144, 44); /* Color naranja brillante */
+}
+
+/* Contacto */
+.numero_contacto ul {
+    text-align: center; /* Centra los elementos de la lista */
+    padding: 0; /* Sin padding */
+}
+
+/* Estilo de los elementos de contacto */
+.numero_contacto ul li {
+    display: block; /* Cada elemento en su línea */
+    list-style: none; /* Sin viñetas */
+    font-size: 25px; /* Tamaño grande del texto */
+    color: rgb(251, 144, 44); /* Color naranja brillante */
+    font-family: Barlow, sans-serif; /* Fuente Barlow */
+    padding: 10px; /* Espacio interno */
+}
+
+/* Media Queries para Responsividad */
+
+/* Ajustes para pantallas menores a 1000px */
+@media (max-width: 1000px) {
+    .header-main-nav a {
+        font-size: 20px; /* Ajusta el tamaño del texto */
+    }
+
+    .numero_contacto ul li {
+        font-size: 20px; /* Texto más pequeño */
+    }
+
+    .header-social li a {
+        font-size: 36px; /* Tamaño reducido para los iconos */
+    }
+}
+
+/* Ajustes para pantallas menores a 750px */
+@media (max-width: 750px) {
+    .header-main-nav a {
+        font-size: 18px; /* Texto más pequeño aún */
+    }
+
+    .numero_contacto ul li {
+        font-size: 18px; /* Tamaño reducido del texto */
+    }
+
+    .header-social li a {
+        font-size: 30px; /* Iconos más pequeños */
+    }
+}

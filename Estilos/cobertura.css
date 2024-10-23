@@ -1,0 +1,181 @@
+/* -------- Estilos generales -------- */
+* {
+    margin: 0; /* Elimina los márgenes por defecto de todos los elementos */
+    padding: 0; /* Elimina los paddings por defecto */
+    box-sizing: border-box; /* Asegura que el padding y borde no aumenten el tamaño del elemento */
+}
+
+html, body {
+    width: 100%; /* El contenido ocupa todo el ancho disponible */
+    height: 100%; /* El contenido ocupa todo el alto disponible */
+    font-family: 'Barlow', sans-serif; /* Fuente principal de la página */
+    background: linear-gradient(135deg, rgba(255, 239, 207, 0.9), rgba(255, 223, 186, 1)); /* Fondo degradado */
+    color: rgb(90, 54, 3); /* Color del texto principal */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: center; /* Centra el texto de forma predeterminada */
+    overflow-x: hidden; /* Elimina desplazamiento horizontal no deseado */
+}
+
+/* Encabezado (Tienda) */
+.tiendauno {
+    background: linear-gradient(45deg, rgb(131, 79, 2), rgb(153, 94, 0)); /* Fondo degradado */
+    padding: 20px 0; /* Espacio superior e inferior */
+    font-size: 28px; /* Tamaño del texto del encabezado */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); /* Sombra al texto */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+.tiendauno a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold; /* Texto en negrita */
+    letter-spacing: 1px; /* Espacio entre letras */
+    transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+.tiendauno a:hover {
+    color: rgb(255, 170, 58); /* Cambia de color al pasar el cursor */
+}
+
+/* Sección de cobertura */
+#cobertura_h2 {
+    margin: 40px auto; /* Margen superior e inferior */
+    color: rgb(255, 170, 58); /* Color del texto */
+    font-size: 32px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    letter-spacing: 2px; /* Espacio entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave al texto */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+#cobertura_h3, #cobertura_list {
+    margin: 20px auto; /* Margen superior e inferior */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: rgb(253, 180, 107); /* Color del texto */
+    font-size: 22px; /* Tamaño del texto */
+    line-height: 1.8; /* Espaciado entre líneas */
+    max-width: 90%; /* Limita el ancho del contenido */
+}
+
+/* Imagen decorativa */
+#casitasalinas {
+    margin: 30px auto; /* Centra el contenido con margen */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    transition: transform 0.3s ease; /* Transición para efectos de escala */
+}
+
+#casitasalinas img {
+    max-width: 300px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave en la escala y sombra */
+}
+
+#casitasalinas img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al hacer hover */
+}
+
+/* Sección de Google Maps */
+.Ubication {
+    background-color: rgb(247, 247, 247); /* Color de fondo claro */
+    padding: 30px 0; /* Espacio interno */
+    border-top: 2px solid rgb(255, 226, 168); /* Borde superior */
+    border-bottom: 2px solid rgb(255, 226, 168); /* Borde inferior */
+    margin: 0 auto; /* Centrado horizontal */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 1200px; /* Ancho máximo */
+}
+
+.visual-ubication {
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+.visual-ubication img {
+    max-width: 250px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción */
+    transition: transform 0.3s ease; /* Efecto de escala suave */
+}
+
+.visual-ubication img:hover {
+    transform: scale(1.08); /* Aumenta la escala en un 8% */
+}
+
+/* Redes sociales */
+.header-social {
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 40px; /* Espacio entre iconos */
+    margin-top: 40px; /* Margen superior */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+.header-social li {
+    list-style: none; /* Elimina las viñetas de la lista */
+}
+
+.header-social li a i {
+    font-size: 50px; /* Tamaño del icono */
+    color: rgb(251, 144, 44); /* Color inicial */
+    transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+.header-social li a i:hover {
+    color: rgb(255, 170, 58); /* Cambia el color al pasar el cursor */
+}
+
+/* Contacto */
+.numero_contacto {
+    color: rgb(251, 144, 44); /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    margin: 30px 0; /* Margen superior e inferior */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* -------- Media Queries -------- */
+
+/* Estilos responsivos */
+/* Estilos responsivos */
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 4vw; /* Proporcional al ancho de la ventana */
+    }
+
+    .tiendauno {
+        font-size: 5vw; /* Proporcional al ancho de la ventana */
+    }
+
+    #cobertura_h2 {
+        font-size: 5vw; /* Proporcional al ancho de la ventana */
+    }
+
+    #cobertura_h3,
+    #cobertura_list {
+        font-size: 4vw; /* Proporcional al ancho de la ventana */
+    }
+
+    #casitasalinas img {
+        max-width: 80%; /* Más pequeño en móviles */
+    }
+
+    .visual-ubication img {
+        max-width: 50%; /* Más pequeño en móviles */
+    }
+
+    .header-social li a i {
+        font-size: 4vw; /* Proporcional al ancho de la ventana */
+    }
+
+    .numero_contacto {
+        font-size: 3vw; /* Proporcional al ancho de la ventana */
+    }
+}
