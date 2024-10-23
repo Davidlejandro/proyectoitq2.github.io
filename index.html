@@ -1,0 +1,234 @@
+<!--Creamos la estructura de la pagina web con HTML:5-->
+<!DOCTYPE html>
+<html lang="en">
+<!--La cabeza del lenguaje html-->
+
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CSS-->
+        <link rel="stylesheet" href="estilos/bases.css">
+        <link rel="stylesheet" href="estilos/mains.css">
+        <link rel="stylesheet" href="estilos/productos.css">
+        <!--<link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.css"-->
+        <!--JavaScript
+    ===================================================-->
+        <script src="js/modernizr.js"></script>
+        <script src="js/pace.min.js"></script>
+        <!--Casita Salinera - icono de la pestaña
+    ===================================================-->
+        <link rel="icon" type="image/png" sizes="32x32" href="imagenes/Logo.jfif">
+
+        <title>La Casita Salinera</title>
+</head>
+<!--Inicio del cuerpo del codigo HTML-->
+
+<body id="top">
+        <!--vista de carga o loading-->
+        <div id="preloader">
+                <div id="loader"></div>
+        </div>
+        <!--header nos ayudara especificamente para informacion del encabezado, en este caso de la pagina-->
+        <!--div es un contenedor donde estan los logotipos de la licoreria casita salinera-->
+        <header class="s-header">
+                <div class="header-logo">
+                        <a href="index.html" class="site-logo">
+                                <img src="imagenes/Pájaro Azúl.png" width="50px" height="50px" alt="Homepage">
+                        </a>
+                </div>
+                <nav class="header-nav-wrap">
+                        <ul class="header-main-nav">
+                                <li class="current"><a href="index.html" class="smoothscroll" title="intro">Tienda</a>
+                                </li>
+                                <li><a href="barra_navegacion/nosotros.html" title="about"
+                                                class="smoothscroll">Nosotros</a></li>
+                                <li><a href="barra_navegacion/cobertura.html" title="services"
+                                                class="smoothscroll">Cobertura</a></li>
+                                <li><a href="barra_navegacion/contactos.html" title="contact us"
+                                                class="smoothscroll">Contactanos</a>
+                                </li>
+                        </ul>
+        </header><!--fin del header-->
+        <!--Section un contenedor donde tendra en su contenido el titulo principal de la pagina web-->
+        <!--Tamaño de letras h1 de licoreria la casita salinera-->
+        <div class="Titulo-Casita">
+                <h1>Licorería La Casita Salinera</h1>
+        </div>
+        <!--Contendor de informacion licoreria casita salienra-->
+
+        <section class="Content-About">
+                <div class="title-about-us">
+                        <!--Sub titulo con tamaño de letras h2-->
+                        <h2>
+                                Categorías
+                        </h2>
+                </div>
+                <!--Creamos una clase menudos junto a la clase opciones para que las opciones de cremas,
+                vinos y licores se puedan realizar de mejor manera en el css-->
+                <nav class="menudos">
+                        <ul class="opciones">
+                                <li><a href="Categorias/cremas.html" title="Cremas" class="C-cremas">Cremas</a></li>
+                                <li><a href="Categorias/vinos.html" title="Vinos" class="C-vinos">Vinos</a></li>
+                                <li><a href="Categorias/licores.html" title="Licores" class="C-Licores">Licores</a></li>
+                        </ul>
+                </nav>
+                <!--Nuevo contenedor para la información de la empresa-->
+                <div class="productosprincipal">
+                        <!--Creación para la visualizacion de todos los productos que se vendan-->
+                        <!--En la primera referencia irán todas las imágenes de los vinos que se vendan-->
+                        <!--En la segunda referencia será el link que los llevara al producto en cuestión pero con su información detallada-->
+                        <!--El style display block hace que mi link de la imagen se visualice debajo de la ilustración-->
+                        <h2 id="img1"><img src="imagenes/LICOR DE CREMA DE CACAO(750 ml).png"
+                                        alt="LICOR DE CREMA DE CACAO(750 ml)" title="L G E 0 0 0 1"><a
+                                        href="Productos/1.html" style="display: block;">LICOR DE CREMA DE CACAO(750
+                                        ml)</a></img></h2>
+                        <h2 id="img2"><img src="imagenes/LICOR DE CREMA DE CACAO(375 ml).png"
+                                        alt="LICOR DE CREMA DE CACAO(375 ml)" title="L G E 0 0 0 2"><a
+                                        href="Productos/2.html" style="display: block;">LICOR DE CREMA DE CACAO(375
+                                        ml)</a></img></h2>
+                        <h2 id="img3"><img src="imagenes/LICOR DE CREMA DE CACAO(165 ml).png"
+                                        alt="LICOR DE CREMA DE CACAO(165 ml)" title="L G E 0 0 0 3"><a
+                                        href="Productos/3.html" style="display: block;">LICOR DE CREMA DE CACAO(165
+                                        ml)</a></img></h2>
+                        <h2 id="img4"><img src="imagenes/LICOR DE CREMA DE CACAO(90 ml).png"
+                                        alt="LICOR DE CREMA DE CACAO(90 ml)" title="L G E 0 0 0 4"><a
+                                        href="Productos/4.html" style="display: block;">LICOR DE CREMA DE CACAO(90
+                                        ml)</a></img></h2>
+                        <h2 id="img5"><img src="imagenes/LICOR DE CREMA DE CACAO(50 ml).png"
+                                        alt="LICOR DE CREMA DE CACAO(50 ml)" title="L G E 0 0 0 5"><a
+                                        href="Productos/5.html" style="display: block;">LICOR DE CREMA DE CACAO(50
+                                        ml)</a></img></h2>
+                        <h2 id="img6"><img src="imagenes/LICOR DE CREMA DE CAFE(750 ml).png"
+                                        alt="LICOR DE CREMA DE CAFE(750 ml)" title="L G E 0 0 9"><a
+                                        href="Productos/6.html" style="display: block;">LICOR DE CREMA DE CAFE(750
+                                        ml)</a></img></h2>
+                        <h2 id="img7"><img src="imagenes/LICOR DE CREMA DE CAFE(375 ml).png"
+                                        alt="LICOR DE CREMA DE CAFE(375 ml)" title="L G E 0 0 10"><a
+                                        href="Productos/7.html" style="display: block;">LICOR DE CREMA DE CAFE(375
+                                        ml)</a></img></h2>
+                        <h2 id="img8"><img src="imagenes/LICOR DE CREMA DE CAFE(165 ml).png"
+                                        alt="LICOR DE CREMA DE CAFE(165 ml)" title="L G E 0 0 11"><a
+                                        href="Productos/8.html" style="display: block;">LICOR DE CREMA DE CAFE(165
+                                        ml)</a></img></h2>
+                        <h2 id="img9"><img src="imagenes/LICOR DE CREMA DE CAFE(90 ml).png"
+                                        alt="LICOR DE CREMA DE CAFE(90 ml)" title="L G E 0 0 12"><a
+                                        href="Productos/9.html" style="display: block;">LICOR DE CREMA DE CAFE(90
+                                        ml)</a></img></h2>
+                        <h2 id="img10"><img src="imagenes/LICOR DE CREMA DE CAFE(50 ml).png"
+                                        alt="LICOR DE CREMA DE CAFE(50 ml)" title="L G E 0 0 13"><a
+                                        href="Productos/10.html" style="display: block;">LICOR DE CREMA DE CAFE(50
+                                        ml)</a></img></h2>
+                        <h2 id="img11"><img src="imagenes/LICOR PÁJARO AZUL(750 ml).png" alt="LICOR PÁJARO AZUL(750 ml)"
+                                        title="L G E 0 0 17"><a href="Productos/11.html" style="display: block;">LICOR
+                                        PÁJARO AZUL(750 ml)</a></img></h2>
+                        <h2 id="img12"><img src="imagenes/LICOR PÁJARO AZUL(375 ml).png" alt="LICOR PÁJARO AZUL(375 ml)"
+                                        title="L G E 0 0 18"><a href="Productos/12.html" style="display: block;">LICOR
+                                        PÁJARO AZUL(375 ml)</a></img></h2>
+                        <h2 id="img13"><img src="imagenes/LICOR PÁJARO AZUL(165 ml).png "
+                                        alt="LICOR PÁJARO AZUL(165 ml)" title="L G E 0 0 19"><a href="Productos/13.html"
+                                        style="display: block;">LICOR PÁJARO AZUL(165 ml)</a></img></h2>
+                        <h2 id="img14"><img src="imagenes/LICOR PÁJARO AZUL(90 ml).png" alt="LICOR PÁJARO AZUL(90 ml)"
+                                        title="L G E 0 0 20"><a href="Productos/14.html" style="display: block;">LICOR
+                                        PÁJARO AZUL(90 ml)</a></img></h2>
+                        <h2 id="img15"><img src="imagenes/LICOR PÁJARO AZUL(50 ml).png" alt="LICOR PÁJARO AZUL(50 ml)"
+                                        title="L G E 0 0 21"><a href="Productos/15.html" style="display: block;">LICOR
+                                        PÁJARO AZUL(50 ml)</a></img></h2>
+                        <h2 id="img16"><img src="imagenes/LICOR DE MAYACUYÁ(750 ml).png" alt="LICOR DE MAYACUYÁ(750 ml)"
+                                        title="L G E 0 0 25"><a href="Productos/16.html" style="display: block;">LICOR
+                                        DE MAYACUYÁ(750 ml)</a></img></h2>
+                        <h2 id="img17"><img src="imagenes/LICOR DE MAYACUYÁ(375 ml).png" alt="LICOR DE MAYACUYÁ(375 ml)"
+                                        title="L G E 0 0 26"><a href="Productos/17.html" style="display: block;">LICOR
+                                        DE MAYACUYÁ(375 ml)</a></img></h2>
+                        <h2 id="img18"><img src="imagenes/LICOR DE MAYACUYÁ(165 ml).png" alt="LICOR DE MAYACUYÁ(165 ml)"
+                                        title="L G E 0 0 27"><a href="Productos/18.html" style="display: block;">LICOR
+                                        DE MAYACUYÁ(165 ml)</a></img></h2>
+                        <h2 id="img19"><img src="imagenes/LICOR DE MAYACUYÁ(90 ml).png" alt="LICOR DE MAYACUYÁ(90 ml)"
+                                        title="L G E 0 0 28"><a href="Productos/19.html" style="display: block;">LICOR
+                                        DE MAYACUYÁ(90 ml)</a></img></h2>
+                        <h2 id="img20"><img src="imagenes/LICOR DE MAYACUYÁ(50 ml).png" alt="LICOR DE MAYACUYÁ(50 ml)"
+                                        title="L G E 0 0 29"><a href="Productos/20.html" style="display: block;">LICOR
+                                        DE MAYACUYÁ(50 ml)</a></img></h2>
+                        <h2 id="img21"><img src="imagenes/LICOR DE MORA(750 ml).png" alt="LICOR DE MORA(750 ml)"
+                                        title="L G E 0 0 41"><a href="Productos/21.html" style="display: block;">LICOR
+                                        DE MORA(750 ml)</a></img></h2>
+                        <h2 id="img22"><img src="imagenes/LICOR DE MORA(375 ml).png" alt="LICOR DE MORA(375 ml)"
+                                        title="L G E 0 0 42"><a href="Productos/22.html" style="display: block;">LICOR
+                                        DE MORA(375 ml)</a></img></h2>
+                        <h2 id="img23"><img src="imagenes/LICOR DE MORA(165 ml).png" alt="LICOR DE MORA(165 ml)"
+                                        title="L G E 0 0 43"><a href="Productos/23.html" style="display: block;">LICOR
+                                        DE MORA(165 ml)</a></img></h2>
+                        <h2 id="img24"><img src="imagenes/LICOR DE MORA(90 ml).png" alt="LICOR DE MORA(90 ml)"
+                                        title="L G E 0 0 44"><a href="Productos/24.html" style="display: block;">LICOR
+                                        DE MORA(90 ml)</a></img></h2>
+                        <h2 id="img25"><img src="imagenes/LICOR DE MORA(50 ml).png" alt="LICOR DE MORA(50 ml)"
+                                        title="L G E 0 0 45"><a href="Productos/25.html" style="display: block;">LICOR
+                                        DE MORA(50 ml)</a></img></h2>
+                        <h2 id="img26"><img src="imagenes/VINO DE MORTIÑO(750 ml).png" alt="VINO DE MORTIÑO(750 ml)"
+                                        title="L G E 0 0 81"><a href="Productos/26.html" style="display: block;">VINO DE
+                                        MORTIÑO(750 ml)</a></img></h2>
+                        <h2 id="img27"><img src="imagenes/VINO DE MORTIÑO(375 ml).png" alt="VINO DE MORTIÑO(375 ml)"
+                                        title="L G E 0 0 82"><a href="Productos/27.html" style="display: block;">VINO DE
+                                        MORTIÑO(375 ml)</a></img></h2>
+                        <h2 id="img28"><img src="imagenes/VINO DE ROSELLA(750 ml).png" alt="VINO DE ROSELLA(750 ml)"
+                                        title="None-code"><a href="Productos/28.html" style="display: block;">VINO DE
+                                        ROSELLA(750 ml)</a></img></h2>
+                        <h2 id="img29"><img src="imagenes/VINO DE MORA(750 ml).png" alt="VINO DE MORA(750 ml)"
+                                        title="L G E 0 0 83"><a href="Productos/29.html" style="display: block;">VINO DE
+                                        MORA(750 ml)</a></img></h2>
+                        <h2 id="img30"><img src="imagenes/VINO DE ARANDANO(750 ml).png" alt="VINO DE ARANDANO(750 ml)"
+                                        title="L G E 0 0 84"><a href="Productos/30.html" style="display: block;">VINO DE
+                                        ARANDANO(750 ml)</a></img></h2>
+                </div>
+        </section>
+        <!--Logo de google maps como indicación al usuario indicar la ubicación de la licorería casita salinera-->
+        <!--ubicando en la carpeta de "imagenes" la ilustración google.png con el nombre de que trata la imagen-->
+
+        <section class="Ubication">
+                <!--contenedor-->
+                <div class="ubicacion-container">
+                        <div class="ubicacion-content">
+                                <!--Creación de diferentes párrafos para que el texto no aparezca unido-->
+                                <p>
+                                        Para llegar a "La Casita Salinera" entrando a Salinas, sigue estos pasos: Al
+                                        ingresar por la vía
+                                        principal de la ciudad, la Avenida 4 de Noviembre, continúa derecho hasta llegar
+                                        a la rotonda principal.
+                                        Luego, sigue en dirección al Malecón de Salinas por la Avenida Malecón. Al
+                                        llegar al Malecón, gira a la
+                                        derecha en la Avenida Carlos Espinoza Larrea y continúa recto hasta la Avenida
+                                        Rubén Borbor Mite. Gira a
+                                        la izquierda y sigue derecho hasta encontrar la calle que te llevará a La Casita
+                                        Salinera, ubicada en
+                                        una zona residencial.
+                                </p>
+                                <p>
+                                        To get to "La Casita Salinera" when entering Salinas, follow these steps: Enter
+                                        the city through the
+                                        main road, Avenida 4 de Noviembre, and continue straight until you reach the
+                                        main roundabout. Then, head
+                                        towards the Malecón de Salinas via Avenida Malecón. When you reach the Malecón,
+                                        turn right onto Avenida
+                                        Carlos Espinoza Larrea and keep going straight until you reach Avenida Rubén
+                                        Borbor Mite. Turn left and
+                                        continue straight until you find the street that will take you to La Casita
+                                        Salinera, located in a
+                                        residential area. If you have GPS, use it to make navigation easier, as there
+                                        might be small streets or
+                                        one-way roads.
+                                </p>
+                                <a
+                                        href="https://www.google.com.ec/maps/place/La+casita+Salinera/@-1.404156,-79.0195898,20z/data=!4m7!3m6!1s0x91d343d3f7eef8f9:0x1c093b7605bd918f!4b1!8m2!3d-1.4040749!4d-79.0193511!16s%2Fg%2F11qps3b8zn?hl=es&entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D">
+                                        Selecciona aquí para ver la ubicación más precisa
+                                </a>
+                        </div>
+                </div>
+        </section>
+        <!--Finalizacion del cuerpo HTML-->
+        <footer class="ubi_apk">
+        </footer>
+        <!--Referencia a la carpeta js y el archivo principal.js-->
+        <script src="Js/principal.js"></script>
+</body>
+
+</html>
